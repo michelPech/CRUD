@@ -1,29 +1,12 @@
 package Entidade;
 
-public class produto extends item{
+public class produto extends grupoItem{
 	
 	private Integer nuCodBarrasProduto;
 	private String  nmProduto;
 	private Integer nuFiscoProduto;
-	private String  tpMedidaProduto;
-	private String  nmFamiliaProduto;
-	private String  nmGrupoProduto;
+	private String  tpMedidaProduto;	
 	
-	public item() {
-		
-	}
-
-	public produto(Integer nuCodBarrasProduto, String nmProduto, Integer nuFiscoProduto, String tpMedidaProduto,
-			String nmFamiliaProduto, String nmGrupoProduto) {
-		super();
-		this.nuCodBarrasProduto = nuCodBarrasProduto;
-		this.nmProduto = nmProduto;
-		this.nuFiscoProduto = nuFiscoProduto;
-		this.tpMedidaProduto = tpMedidaProduto;
-		this.nmFamiliaProduto = nmFamiliaProduto;
-		this.nmGrupoProduto = nmGrupoProduto;
-	}
-
 	public Integer getNuCodBarrasProduto() {
 		return nuCodBarrasProduto;
 	}
@@ -54,22 +37,6 @@ public class produto extends item{
 
 	public void setTpMedidaProduto(String tpMedidaProduto) {
 		this.tpMedidaProduto = tpMedidaProduto;
-	}
-
-	public String getNmFamiliaProduto() {
-		return nmFamiliaProduto;
-	}
-
-	public void setNmFamiliaProduto(String nmFamiliaProduto) {
-		this.nmFamiliaProduto = nmFamiliaProduto;
-	}
-
-	public String getNmGrupoProduto() {
-		return nmGrupoProduto;
-	}
-
-	public void setNmGrupoProduto(String nmGrupoProduto) {
-		this.nmGrupoProduto = nmGrupoProduto;
 	}
 
 	@Override
